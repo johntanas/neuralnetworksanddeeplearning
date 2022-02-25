@@ -2,7 +2,7 @@ Sigmoid neurons simulating perceptrons, part I
 Suppose we take all the weights and biases in a network of perceptrons, and multiply them by a positive constant, c>0. Show that the behaviour of the network doesn't change.
 output={0 if w⋅x+b≤0
         1 if w⋅x+b>0}
-        c*(w⋅x+b)≤0 and c*(w⋅x+b)>0
+Answer: c*(w⋅x+b)≤0 and c*(w⋅x+b)>0
 Sigmoid neurons simulating perceptrons, part II 
 Suppose we have the same setup as the last problem - a network of perceptrons. 
 Suppose also that the overall input to the network of perceptrons has been chosen. 
@@ -11,3 +11,13 @@ Suppose the weights and biases are such that w⋅x+b≠0 for the input x to any 
 Now replace all the perceptrons in the network by sigmoid neurons, and multiply the weights and biases by a positive constant c>0. 
 Show that in the limit as c→∞ the behaviour of this network of sigmoid neurons is exactly the same as the network of perceptrons. 
 How can this fail when w⋅x+b=0 for one of the perceptrons?
+Answer:
+σ(z)=1/(1+e**-z)
+as c→∞
+when w⋅x+b>0
+1/(1+e**-c(w⋅x+b))→1
+when w⋅x+b<0:
+1/(1+e**-c(w⋅x+b))→0
+when w⋅x+b=0:
+c(w⋅x+b) is 1 by l'hopital rule
+1/(1+e**-1)→2.37(3s.f)
