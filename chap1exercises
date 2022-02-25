@@ -21,3 +21,14 @@ when w⋅x+b<0:
 when w⋅x+b=0:
 c(w⋅x+b) is 1 by l'hopital rule
 1/(1+e**-1)→2.37(3s.f)
+There is a way of determining the bitwise representation of a digit by adding an extra layer to the three-layer network above. 
+The extra layer converts the output from the previous layer into a binary representation, as illustrated in the figure below. 
+Find a set of weights and biases for the new output layer. Assume that the first 3 layers of neurons are such that the correct output in the third layer 
+(i.e., the old output layer) has activation at least 0.99, 
+and incorrect outputs have activation less than  0.01
+let A1,A2,A3,A4 outputs represent A1A2A3A4 in binary
+all bias are -.5
+A1 (0,0,0,0,0,0,0,0,1,1)
+A2 (0,0,0,0,1,1,1,1,0,0)
+A3 (0,0,1,1,0,0,1,1,0,0)
+A4 (0,1,0,1,0,1,0,1,0,1)
