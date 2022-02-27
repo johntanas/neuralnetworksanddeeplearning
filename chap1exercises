@@ -32,3 +32,13 @@ A1 (0,0,0,0,0,0,0,0,1,1)
 A2 (0,0,0,0,1,1,1,1,0,0)
 A3 (0,0,1,1,0,0,1,1,0,0)
 A4 (0,1,0,1,0,1,0,1,0,1)
+Prove the assertion of the last paragraph. 
+Hint: If you're not already familiar with the Cauchy-Schwarz inequality, 
+you may find it helpful to familiarize yourself with it.
+Answer:
+ΔC≈∇C⋅-∇C∥Δv∥/∥∇C∥
+I explained gradient descent when C is a function of two variables, and when it's a function of more than two variables. 
+What happens when C is a function of just one variable? 
+Can you provide a geometric interpretation of what gradient descent is doing in the one-dimensional case?
+Answer:
+gradient descent is just the slope of a curve/line.
