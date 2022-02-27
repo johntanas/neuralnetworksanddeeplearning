@@ -42,3 +42,11 @@ What happens when C is a function of just one variable?
 Can you provide a geometric interpretation of what gradient descent is doing in the one-dimensional case?
 Answer:
 gradient descent is just the slope of a curve/line.
+An extreme version of gradient descent is to use a mini-batch size of just 1. 
+That is, given a training input, x, we update our weights and biases according to the rules wk→w′k=wk−η∂Cx/∂wk and bl→b′l=bl−η∂Cx/∂bl. 
+Then we choose another training input, and update the weights and biases again. And so on, repeatedly. 
+This procedure is known as online, on-line, or incremental learning. 
+In online learning, a neural network learns from just one training input at a time (just as human beings do). 
+Name one advantage and one disadvantage of online learning, compared to stochastic gradient descent with a mini-batch size of, say, 20.
+advantage: less computational cost
+disadvantage: higher variance
